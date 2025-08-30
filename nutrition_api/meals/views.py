@@ -17,4 +17,9 @@ class MealViewSet(viewsets.ModelViewSet):
         user = self.request.query_params.get("user")
         if user:
             qs = qs.filter(user__iexact=user)
+
+        day = self.request.query_params.get("day")
+        if day:
+            qs = qs.filter(created_at__date=day)
+            
         return qs
