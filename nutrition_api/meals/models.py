@@ -10,6 +10,7 @@ class Meal(models.Model):
     carbs_g = models.FloatField(default=0)
     fat_g = models.FloatField(default=0)
     sugar_g = models.FloatField(default=0)
+    name = models.TextField(blank=True)
 
        
     def __str__(self):
