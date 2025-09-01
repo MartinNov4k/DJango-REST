@@ -1,8 +1,14 @@
 from rest_framework import serializers
-from .models import Meal
+from .models import Meal, Targets
 
 class MealSerializer(serializers.ModelSerializer):
     class Meta:
         model = Meal
         fields = ["id", "user","created_at", "calories", "protein_g", "carbs_g", "fat_g", "sugar_g", "name"]
         read_only_fields = ["id", "created_at"]
+
+class TargetsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Targets
+        fields = ["id", "user","calories", "protein_g", "carbs_g", "fat_g", "sugar_g"]
+        read_only_fields = ["id"]

@@ -1,3 +1,9 @@
 db.sqlite3
 /db.sqlite3
 nutrition_api/db.sqlite3
+nutrition_api/meals/migrations/__pycache__/0002_meal_name.cpython-311.pyc
+nutrition_api/meals/__pycache__/serializers.cpython-311.pyc
+nutrition_api/meals/__pycache__/models.cpython-311.pyc
+nutrition_api/db.sqlite3
+nutrition_api/db.sqlite3
+nutrition_api/db.sqlite3
